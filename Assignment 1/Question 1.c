@@ -3,8 +3,10 @@
 #include <stdio.h>
 int main() {
     int n,i,max1,max2;
+    printf("Enter number of elements: ");
     scanf("%d",&n);
     int a[n];
+    printf("Enter %d elements: ",n);
     for(i=0;i<n;i++) scanf("%d",&a[i]);
     max1=max2=a[0];
     for(i=1;i<n;i++){
@@ -15,7 +17,8 @@ int main() {
             max2=a[i];
         }
     }
-    printf("%d",max2);
+    printf("Second largest element: %d",max2);
     return 0;
 }
+
 
